@@ -120,7 +120,7 @@ header .container {
   flex-direction: column;
   gap: 20px;
   font-size: 2rem;
-  padding: 50px;
+  padding: 3.5rem;
   cursor: pointer;
 }
 .tab input:checked + label {
@@ -251,11 +251,7 @@ section.tab-one .tab-content p {
   gap: 10px;
   flex-direction: column;
 }
-@media (max-width: 768px) {
-  body {
-    font-size: 5px;
-  }
-}
+
 @media (max-width: 992px) {
   section.tab-one .container {
     flex-direction: column;
@@ -266,7 +262,7 @@ section.tab-one .tab-content p {
   .img-tab-one img {
     width: 100%;
   }
-  body {
+  html {
     font-size: 10px;
   }
   .tabs label span {
@@ -274,5 +270,16 @@ section.tab-one .tab-content p {
   }
   .tab-two-content {
     flex-direction: column;
+  }
+  header {
+    box-shadow: inset 52px 100px 250px, inset -120px -100px 250px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  .tabs label {
+    font-size: 1rem;
   }
 }
